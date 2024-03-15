@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Giveaway Iphone14promax</title>
+</head>
+
+<body>
+        <div class="img">
+        <img src="apple-iphone-14-pro-4.jpg" alt="apple phone">
+    </div>
+    <div class="content">
+        <p>
+        <h1>Old <span class="Iphone">Iphone</span> Giveaway</h1>
+        <h2>Giveaway ends on Saturday, 30th March 2024 at 1:30pm</h2>
+        <h3>We're giving away the new iPhone 14 Pro Max! It has a 6.7-inch Super Retina XDR display, A16 Bionic chip,
+            triple-camera system, 5G capabilities, and all-day battery life. To enter, click the link below. Don't miss
+            out!!</h3>
+        </p>
+        <div class="timer">
+            <p id="days">00</p>
+            <span>Days</span>
+        </div>
+
+        <div class="timer">
+            <p id="hours">00</p>
+            <span>Hrs</span>
+        </div>
+
+        <div class="timer">
+            <p id="minutes">00</p>
+            <span>Mins</span>
+        </div>
+
+        <div class="timer">
+            <p id="seconds">00</p>
+            <span>Secs</span>
+        </div>
+    </div>
+
+    <script>
+        var countDownDate = new Date("March 30, 2024 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+        }, 1000);
+
+    </script>
+
+</body>
+
+</html>
